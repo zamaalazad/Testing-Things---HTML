@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Animation by CSS</title>
+		<style type="text/css" media="screen">
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: 'Arial Black', sans-serif;
+			}
+			body{
+				display: grid;
+				place-items: center;
+				text-align: right;
+				width: 400px;
+				margin: 0 auto;
+				margin-top: 300px;
+			}
+			h1{
+				animation: topBottom 1s ease-in;
+				display: block;
+				font-size: 36px;
+			}
+			hr{
+				height: 4px;
+				background: #111;
+				border: none;
+				width: 100%;
+				animation: line 1s ease-in;
+				position: relative;
+				left: 0;
+			}
+			h4{
+				text-transform: uppercase;
+				font-family: 'Arial', sans-serif;
+				margin-top: 5px;
+				animation: bottomTop 1s ease-out;
+				display: block;
+			}
+			h1, h4{
+				text-align: right;
+				width: 100%;
+			}
+			
+			
+			@keyframes line{
+				0%{
+					width: 0;
+				}
+				100%{
+					width: 100%;
+				}
+			}
+			@keyframes topBottom{
+				0%{
+					opacity: 0;
+				}
+				100%{
+					opacity: 1;
+				}
+			}
+			@keyframes bottomTop{
+				0%{
+					opacity: 0; 
+				}
+				100%{
+					opacity: 1;
+				}
+			}
+			
+			section.love{
+				color: white;
+				margin-top: 50px;
+				background: red;
+				padding: 20px 60px;
+				border-radius: 10px;
+				position: relative;
+				width: 100px;
+				height: 30px;
+			}
+			.love p{
+				background: black;
+				border-radius: 4px;
+				margin-top: 30px;
+				margin-left: -30px;
+				text-align: center;
+				padding: 20px;
+				width: 100%;
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+		
+			<div class="animations">
+				<h1>JOHN DOE</h1>
+				<hr>
+				<h4>Software developer</h4>
+			</div>
+			
+			<section class="love">
+				<h3>I love you</h3>
+				<p class="tips">Hello! how Are you?</p>
+			</section>
+			
+		
+	</body>
+	
+</html>

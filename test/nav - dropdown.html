@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en/US">
+	<head>
+		<title>This is Test</title>
+		<link rel="stylesheet" href="main.css" type="text/css" media="screen" charset="utf-8">
+		<style>
+			:root{
+				--nav-w: 11.25em;
+			}
+			*{
+				padding: 0;
+				margin: 0;
+				font-family: sans-serif;
+			}
+			
+			body{
+				background-color: #fafafa;
+			}
+			ul li{
+				list-style: none;
+			}
+			a:link, a:visited, a:focus{
+				text-decoration: none;
+				color: #4c4b4b;
+				transition: color 200ms ease-in;
+			}
+			a:hover{
+				color: #000000;
+			}
+			main{
+				background: #ffffff;
+			}
+			nav{
+				max-width: 1000px;
+				margin: 0 auto;
+				
+			}
+			nav > ul{
+				display: flex;
+			}
+			nav ul li{
+				position: relative;
+				background: #fff;
+			}
+			nav ul li a{
+				padding: 18px 25px;
+				box-sizing: border-box;
+				display: block;
+			}
+			nav ul li ul{
+				position: absolute;
+				display: none;
+				width: var(--nav-w);
+				margin-top: 10px;
+				box-shadow: 0 2px 6px 1px rgba(0,0,0,0.1);
+				animation: rounding 800ms ease-in-out infinite;
+			}
+			
+			nav ul li ul::before{
+				content: '';
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				background: #ffffff;
+				top: -3px;
+				left: 20%;
+				box-shadow: 0 0 6px rgba(0,0,0,0.16);
+				transform: rotate(45deg) translateX(-20%);
+			}
+			nav ul li:hover ul,
+			nav ul li:hover ul::before{
+				display: block;
+			}
+			
+			@keyframes rounding{
+				
+				0%{
+					top: 55px;
+				}
+				50%{
+					top: 58px;
+				}
+				100%{
+					top:  55px;
+				}
+				
+			}
+		</style>
+	</head>	 
+	
+	<body>
+		
+		<main>
+			<nav id="navigation">
+				<ul>
+					<li><a href="">Intro</a></li>
+					<li><a href="">Work</a></li>
+					<li><a href="">Articles</a>
+						<ul>
+							<li><a href="">Recent Articles</a></li>
+							<li><a href="">Recent Products</a></li>
+							<li><a href="">Revies</a></li>
+							<li><a href="">Technology</a></li>
+							<li><a href="">Tricks</a></li>
+						</ul>
+					</li>
+					<li><a href="">Owning</a></li>
+					<li><a href="">help?</a></li>
+				</ul>	
+			</nav>
+		</main>
+	
+	</body> 
+</html>

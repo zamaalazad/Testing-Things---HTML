@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog Post</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: 'Poppins', sans-serif;
+		}
+		a{
+			transition: all 200ms ease-in-out;
+		}
+		a:visited,
+		a:link,
+		a:focus,
+		a:active{
+			text-decoration: none;
+			color: #000000;
+		}
+		ul li,
+		ol li{
+			list-style: none;
+		}
+		main{
+			width: 1150px;
+			margin: 50px auto;
+			display: grid;
+			grid-template-columns: repeat(20, 1fr);
+			grid-gap: 10px;
+		}
+		.post{
+			grid-column: 1 / span 15;
+		}
+		.sidebar{
+			grid-column: span 5 / -1;
+			text-align: right;
+			margin-top: 20px;
+		}
+		.blog-post{
+			padding: 20px;
+			box-sizing: border-box;
+			align-self: start;
+			grid-row: span 3;
+		}
+		.blog-post h1{
+			text-transform: capitalize;
+			font-size: 30px;
+			font-weight: 700;
+			margin-bottom: 4px;
+		}
+		.timing{
+			margin-bottom: 20px;
+		}
+		.timing, .timing a{
+			font-style: italic;
+			font-size: 10px;
+			color: #ACA9A9;
+		}
+		.timing a:hover{
+			color: #000000;
+		}
+		.blog-post p{
+			font-size: 1em;
+			margin-bottom: 20px;
+			line-height: 28px;
+		}
+		.blog-post > a{
+			font-size: 12px;
+			font-weight: 700;
+			color: #707070;
+		}
+		.blog-post > a:hover{
+			color: #000000;
+		}
+		.sidebar-element{
+			margin-bottom: 40px;
+		}
+		.sidebar-element h1{
+			font-size: 30px;
+			text-transform: lowercase;
+			margin-bottom: 20px;
+		}
+		.sidebar-element ul li a{
+			display: block;
+			padding: 10px 0;
+			text-transform: lowercase;
+			font-size: 12px;
+			color: #676767;
+		}
+		.sidebar-element ul li a:hover{
+			color: #000000;
+		}
+
+
+		.post{
+			display: grid;
+			grid-template-columns: repeat(15, 1fr);
+			grid-gap: 10px;
+		}
+		.blog-post:nth-of-type(2n+1){
+			grid-column: 1 / span 8;
+		}
+		.blog-post:nth-of-type(2n+2){
+			grid-column: span 7 / -1;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<main>
+		<section class="post">
+			<section class="blog-post">
+				<h1>get Started to the course</h1>
+				<div class="timing">Posted in <a href="">The Course</a> at  12-12-2018 </div>
+				<p>
+					The search for entrepreneur Tom Striven, missing for two days, has concluded. Police confirmed this morning that he has been found alive and well wandering around the South Base Camp of Mount Everest, in Nepal. 
+				</p>
+				<a href="">Read More.....</a>
+			</section>
+
+			<section class="blog-post">
+				<h1>get Started to the course</h1>
+				<div class="timing">Posted in <a href="">The Course</a> at  12-12-2018 </div>
+				<p>
+					The search for entrepreneur Tom Striven, missing for two days, has concluded. Police confirmed this morning that he has been found alive and well wandering around the South Base Camp of Mount Everest, in Nepal. 
+				</p>
+				<a href="">Read More.....</a>
+			</section>
+
+			<section class="blog-post">
+				<h1>get Started to the course</h1>
+				<div class="timing">Posted in <a href="">The Course</a> at  12-12-2018 </div>
+				<p>
+					The search for entrepreneur Tom Striven, missing for two days, has concluded. Police confirmed this morning that he has been found alive and well wandering around the South Base Camp of Mount Everest, in Nepal. 
+				</p>
+				<a href="">Read More.....</a>
+			</section>
+
+			<section class="blog-post">
+				<h1>get Started to the course</h1>
+				<div class="timing">Posted in <a href="">The Course</a> at  12-12-2018 </div>
+				<p>
+					The search for entrepreneur Tom Striven, missing for two days, has concluded. Police confirmed this morning that he has been found alive and well wandering around the South Base Camp of Mount Everest, in Nepal. 
+				</p>
+				<a href="">Read More.....</a>
+			</section>
+
+			<section class="blog-post">
+				<h1>get Started to the course</h1>
+				<div class="timing">Posted in <a href="">The Course</a> at  12-12-2018 </div>
+				<p>
+					The search for entrepreneur Tom Striven, missing for two days, has concluded. Police confirmed this morning that he has been found alive and well wandering around the South Base Camp of Mount Everest, in Nepal. 
+				</p>
+				<a href="">Read More.....</a>
+			</section>
+
+			<section class="blog-post">
+				<h1>get Started to the course</h1>
+				<div class="timing">Posted in <a href="">The Course</a> at  12-12-2018 </div>
+				<p>
+					The search for entrepreneur Tom Striven, missing for two days, has concluded. Police confirmed this morning that he has been found alive and well wandering around the South Base Camp of Mount Everest, in Nepal. 
+				</p>
+				<a href="">Read More.....</a>
+			</section>
+		</section> <!-- Blog Post here -->
+
+		<section class="sidebar">
+			
+			<section class="sidebar-element">
+				<h1>Categories</h1>
+				<ul>
+					<li><a href="">The Course</a></li>
+					<li><a href="">Independent News</a></li>
+					<li><a href="">Slow Poison</a></li>
+					<li><a href="">software</a></li>
+					<li><a href="">download</a></li>
+				</ul>
+			</section>	
+
+			<section class="sidebar-element">
+				<h1>meta tag</h1>
+				<ul>
+					<li><a href="">Log in</a></li>
+					<li><a href="">Sign up</a></li>
+					<li><a href="">My Profile</a></li>
+					<li><a href="">Settings</a></li>
+					<li><a href="">Logout</a></li>
+				</ul>
+			</section>	
+
+		</section>
+	</main>
+
+</body>
+</html>
